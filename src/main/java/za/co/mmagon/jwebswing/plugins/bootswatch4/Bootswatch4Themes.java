@@ -38,6 +38,6 @@ public enum Bootswatch4Themes
 
 	protected CSSReference getCssReference()
 	{
-		return new CSSReference(name() + "CSS", 1.0, cssLocation);
+		return new CSSReference(name() + "CSS", 1.0, cssLocation).setSpecifiedClassName("bootswatch4");
 	}
 }
