@@ -1,8 +1,25 @@
-package za.co.mmagon.jwebswing.plugins.bootswatch4;
+/*
+ * Copyright (C) 2017 Marc Magon
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+package com.jwebmp.plugins.bootswatch4;
+
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
 
 @PluginInformation(pluginName = "Bootswatch Theme Pack (V4)",
 		pluginUniqueName = "bootswatch-themes",
@@ -18,7 +35,8 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Bootswatch4/wiki",
 		pluginOriginalHomepage = "https://bootswatch.com",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/Bootswatch4.jar/download")
-public class Bootswatch4PageConfigurator extends PageConfigurator
+public class Bootswatch4PageConfigurator
+		extends PageConfigurator
 {
 
 	private static Bootswatch4Themes theme = null;
@@ -48,7 +66,8 @@ public class Bootswatch4PageConfigurator extends PageConfigurator
 	{
 		if (!page.isConfigured() && theme != null)
 		{
-			page.getBody().addCssReference(theme.getCssReference());
+			page.getBody()
+			    .addCssReference(theme.getCssReference());
 		}
 		return page;
 	}

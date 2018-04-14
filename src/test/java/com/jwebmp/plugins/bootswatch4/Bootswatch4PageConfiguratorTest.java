@@ -1,7 +1,7 @@
-package za.co.mmagon.jwebswing.plugins.bootswatch4;
+package com.jwebmp.plugins.bootswatch4;
 
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.jwebswing.Page;
 
 class Bootswatch4PageConfiguratorTest
 {
