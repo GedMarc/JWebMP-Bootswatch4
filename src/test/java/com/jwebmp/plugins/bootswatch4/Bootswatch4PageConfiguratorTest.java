@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.bootswatch4;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import org.junit.jupiter.api.Test;
 
 class Bootswatch4PageConfiguratorTest

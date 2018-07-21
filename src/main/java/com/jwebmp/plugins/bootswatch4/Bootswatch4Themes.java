@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.bootswatch4;
 
-import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.core.base.references.CSSReference;
 
 /**
  * All the themes for bootswatch 4

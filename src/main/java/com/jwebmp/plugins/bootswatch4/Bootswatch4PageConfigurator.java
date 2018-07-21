@@ -17,9 +17,9 @@
 
 package com.jwebmp.plugins.bootswatch4;
 
-import com.jwebmp.Page;
-import com.jwebmp.PageConfigurator;
-import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.PageConfigurator;
+import com.jwebmp.core.plugins.PluginInformation;
 
 @PluginInformation(pluginName = "Bootswatch Theme Pack (V4)",
 		pluginUniqueName = "bootswatch-themes",
