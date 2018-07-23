@@ -18,8 +18,8 @@
 package com.jwebmp.plugins.bootswatch4;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 @PluginInformation(pluginName = "Bootswatch Theme Pack (V4)",
 		pluginUniqueName = "bootswatch-themes",
@@ -36,7 +36,7 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginOriginalHomepage = "https://bootswatch.com",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/Bootswatch4.jar/download")
 public class Bootswatch4PageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
 
 	private static Bootswatch4Themes theme = null;
