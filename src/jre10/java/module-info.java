@@ -12,4 +12,5 @@ module com.jwebmp.plugins.bootswatch4 {
 
 	provides IPageConfigurator with Bootswatch4PageConfigurator;
 
+	opens com.jwebmp.plugins.bootswatch4 to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
