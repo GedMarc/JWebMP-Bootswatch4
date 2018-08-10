@@ -21,6 +21,8 @@ import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.services.IPageConfigurator;
 
+import javax.validation.constraints.NotNull;
+
 @PluginInformation(pluginName = "Bootswatch Theme Pack (V4)",
 		pluginUniqueName = "bootswatch-themes",
 		pluginDescription = "Free themes for Bootstrap",
@@ -61,6 +63,7 @@ public class Bootswatch4PageConfigurator
 		Bootswatch4PageConfigurator.theme = theme;
 	}
 
+	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
