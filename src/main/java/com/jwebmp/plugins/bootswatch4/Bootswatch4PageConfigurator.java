@@ -40,8 +40,36 @@ import javax.validation.constraints.NotNull;
 public class Bootswatch4PageConfigurator
 		implements IPageConfigurator
 {
-
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 	private static Bootswatch4Themes theme = null;
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return Bootswatch4PageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		Bootswatch4PageConfigurator.enabled = mustEnable;
+	}
 
 	/**
 	 * Sets the bootswatch 4 theme
@@ -50,7 +78,7 @@ public class Bootswatch4PageConfigurator
 	 */
 	public static Bootswatch4Themes getTheme()
 	{
-		return theme;
+		return Bootswatch4PageConfigurator.theme;
 	}
 
 	/**
@@ -67,11 +95,17 @@ public class Bootswatch4PageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured() && theme != null)
+		if (!page.isConfigured() && Bootswatch4PageConfigurator.theme != null)
 		{
 			page.getBody()
-			    .addCssReference(theme.getCssReference());
+			    .addCssReference(Bootswatch4PageConfigurator.theme.getCssReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return Bootswatch4PageConfigurator.enabled;
 	}
 }
