@@ -32,13 +32,13 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "bootstrap 4",
 		pluginCategories = "bootstrap, bootstrap4, themes",
 		pluginSubtitle = "Free themes for Bootstrap",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Bootswatch4",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Bootswatch4",
 		pluginSourceUrl = "https://bootswatch.com",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Bootswatch4/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Bootswatch4/wiki",
 		pluginOriginalHomepage = "https://bootswatch.com",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/Bootswatch4.jar/download")
 public class Bootswatch4PageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<Bootswatch4PageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
