@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootswatch4;
+package com.jwebmp.plugins.bs4.bootswatch;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;

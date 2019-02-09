@@ -15,14 +15,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootswatch4;
+package com.jwebmp.plugins.bs4.bootswatch;
 
 import com.jwebmp.core.base.references.CSSReference;
+import com.jwebmp.core.base.references.JavascriptReference;
+import com.jwebmp.core.htmlbuilder.css.themes.ITheme;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * All the themes for bootswatch 4
  */
 public enum Bootswatch4Themes
+		implements ITheme
 {
 	Cerulean("bootswatch4/Cerulean/bootstrap.min.css"),
 	Cosmo("bootswatch4/Cosmo/bootstrap.min.css"),
@@ -53,8 +59,50 @@ public enum Bootswatch4Themes
 		this.cssLocation = cssLocation;
 	}
 
+	@Override
+	public String getClassName()
+	{
+		return "bootswatch4";
+	}
+
+	@Override
+	public List<CSSReference> getCssReferences()
+	{
+		return Collections.singletonList(getCssReference());
+	}
+
 	protected CSSReference getCssReference()
 	{
 		return new CSSReference(name() + "CSS", 1.0, cssLocation).setSpecifiedClassName("bootswatch4");
+	}
+
+	@Override
+	public List<JavascriptReference> getJavascriptReferences()
+	{
+		return null;
+	}
+
+	@Override
+	public String getSize30Icon()
+	{
+		return null;
+	}
+
+	@Override
+	public String getSize60Icon()
+	{
+		return null;
+	}
+
+	@Override
+	public String getSize90Icon()
+	{
+		return null;
+	}
+
+	@Override
+	public String getName()
+	{
+		return name();
 	}
 }
