@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    
+    "bootswatch": "https://github.com/thomaspark/bootswatch.git#*"
   }
 }
