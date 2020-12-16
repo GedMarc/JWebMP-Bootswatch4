@@ -19,6 +19,7 @@ package com.jwebmp.plugins.bs4.bootswatch;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -26,9 +27,9 @@ import jakarta.validation.constraints.NotNull;
 @PluginInformation(pluginName = "Bootswatch Theme Pack (V4)",
 		pluginUniqueName = "bootswatch-themes",
 		pluginDescription = "Free themes for Bootstrap",
-		pluginVersion = "0.4.beta2",
-		pluginIconUrl = "bootswatch4/logo-nav.png",
-		pluginIconImageUrl = "bootswatch4/logo-nav.png",
+		pluginVersion = "4.5.3",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
 		pluginDependancyUniqueIDs = "bootstrap 4",
 		pluginCategories = "bootstrap, bootstrap4, themes",
 		pluginSubtitle = "Free themes for Bootstrap",
@@ -36,7 +37,13 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://bootswatch.com",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Bootswatch4/wiki",
 		pluginOriginalHomepage = "https://bootswatch.com",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/Bootswatch4.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.bootstrap/jwebmp-bootswatch",
+		pluginGroupId = "com.jwebmp.plugins.bootstrap",
+		pluginArtifactId = "jwebmp-bootswatch",
+		pluginModuleName = "com.jwebmp.plugins.bs4.bootswatch",
+		pluginLastUpdatedDate = "2020/12/15",
+		pluginStatus = PluginStatus.Released
+)
 public class Bootswatch4PageConfigurator
 		implements IPageConfigurator<Bootswatch4PageConfigurator>
 {
