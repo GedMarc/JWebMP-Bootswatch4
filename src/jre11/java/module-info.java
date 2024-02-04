@@ -4,7 +4,7 @@ module com.jwebmp.plugins.bs4.bootswatch {
 	exports com.jwebmp.plugins.bs4.bootswatch;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
